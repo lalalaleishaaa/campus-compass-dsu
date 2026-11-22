@@ -1,4 +1,5 @@
-
+from pathlib import Path
+from flask import send_file
 from flask import Flask, jsonify, request
 from sqlalchemy import text
 
@@ -284,3 +285,14 @@ def get_categories():
 
 if __name__ == "__main__":
     app.run(debug=True)
+ROAD_FILE = Path(__file__).resolve().parent / "data" / "dsu_roads.geojson"
+
+@app.route("/api/route", methods=["GET"])
+def get_route():
+    if not ROAD_FILE.exists():
+        return {"error": "Road file not found"}, 404
+
+    return send_file(
+        ROAD_FILE,
+        mimetype="application/geo+json"
+    )
