@@ -18,51 +18,45 @@
 }
 
 body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light); color: #1e293b; }
-
-.navbar-dsu { background: var(--dsu-navy); box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+.navbar-dsu { background: var(--dsu-navy); box-shadow: 0 2px 10px rgba(0,0,0,.15); }
 .navbar-dsu .navbar-brand { color: #fff; font-weight: 700; display: flex; align-items: center; gap: 10px; }
-.navbar-dsu .navbar-brand small { display: block; font-weight: 400; font-size: 0.7rem; opacity: 0.8; }
-.navbar-dsu .nav-link { color: rgba(255,255,255,0.85) !important; }
+.navbar-dsu .navbar-brand small { display: block; font-weight: 400; font-size: .7rem; opacity: .8; }
+.navbar-dsu .nav-link { color: rgba(255,255,255,.85) !important; }
 .navbar-dsu .nav-link:hover { color: var(--dsu-gold) !important; }
 
-.hero { background: linear-gradient(135deg, var(--dsu-navy), var(--dsu-blue)); color: #fff; padding: 38px 20px; text-align: center; }
+.hero { background: linear-gradient(135deg,var(--dsu-navy),var(--dsu-blue)); color: #fff; padding: 38px 20px; text-align: center; }
 .hero h1 { font-size: 2.1rem; font-weight: 700; }
-.hero p { font-size: 1rem; opacity: 0.9; }
+.hero p { font-size: 1rem; opacity: .9; }
 .search-wrap { max-width: 580px; margin: 18px auto 0; }
 .search-wrap .form-control { border-radius: 30px 0 0 30px; padding: 12px 20px; border: none; }
 .search-wrap .btn { border-radius: 0 30px 30px 0; background: var(--dsu-gold); color: var(--dsu-navy); font-weight: 700; padding: 12px 26px; border: none; }
 .search-wrap .btn:hover { background: #ffc233; }
 .search-result { margin-top: 12px; min-height: 22px; color: var(--dsu-gold); font-weight: 600; }
 
-.map-toolbar {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 8px; background: #fff; padding: 10px 14px; border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(15,44,92,0.08); margin-bottom: 12px;
-}
-.map-wrapper { position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(15,44,92,0.15); background: #e2e8f0; }
+.map-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; background: #fff; padding: 10px 14px; border-radius: 12px; box-shadow: 0 2px 10px rgba(15,44,92,.08); margin-bottom: 12px; }
+.map-wrapper { position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(15,44,92,.15); background: #e2e8f0; }
 #campusMap { height: 600px; width: 100%; display: block; z-index: 1; }
 
 .section-title { color: var(--dsu-navy); font-weight: 700; }
 .section-sub { color: #64748b; }
-.filter-btn { border: 2px solid var(--dsu-blue); background: transparent; color: var(--dsu-blue); border-radius: 20px; padding: 6px 16px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
-.filter-btn:hover, .filter-btn.active { background: var(--dsu-blue); color: #fff; }
+.filter-btn { border: 2px solid var(--dsu-blue); background: transparent; color: var(--dsu-blue); border-radius: 20px; padding: 6px 16px; font-size: .85rem; font-weight: 600; transition: all .2s; }
+.filter-btn:hover,.filter-btn.active { background: var(--dsu-blue); color: #fff; }
 
-.zone-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 14px rgba(15,44,92,0.08); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; height: 100%; display: flex; flex-direction: column; }
-.zone-card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(15,44,92,0.18); }
+.zone-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 14px rgba(15,44,92,.08); cursor: pointer; transition: transform .2s,box-shadow .2s; height: 100%; display: flex; flex-direction: column; }
+.zone-card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(15,44,92,.18); }
 .zone-card .card-img-top { height: 155px; object-fit: cover; }
 .zone-card .card-body { padding: 18px; flex-grow: 1; display: flex; flex-direction: column; }
 .zone-card h5 { color: var(--dsu-navy); font-weight: 700; margin-bottom: 6px; font-size: 1.05rem; }
-.zone-card p { color: #475569; font-size: 0.88rem; line-height: 1.45; flex-grow: 1; }
-.zone-tag { display: inline-block; padding: 3px 12px; border-radius: 20px; background: #e0eaff; color: var(--dsu-blue); font-size: 0.72rem; font-weight: 600; align-self: flex-start; margin-top: 8px; }
+.zone-card p { color: #475569; font-size: .88rem; line-height: 1.45; flex-grow: 1; }
+.zone-tag { display: inline-block; padding: 3px 12px; border-radius: 20px; background: #e0eaff; color: var(--dsu-blue); font-size: .72rem; font-weight: 600; align-self: flex-start; margin-top: 8px; }
 
-.info-panel { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 6px 20px rgba(15,44,92,0.12); position: sticky; top: 80px; min-height: 220px; max-height: 88vh; overflow-y: auto; }
+.info-panel { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 6px 20px rgba(15,44,92,.12); position: sticky; top: 80px; min-height: 220px; max-height: 88vh; overflow-y: auto; }
 .info-panel .info-placeholder { color: #94a3b8; text-align: center; padding: 60px 10px; }
 .info-panel .info-placeholder .big-icon { font-size: 3rem; display: block; margin-bottom: 10px; }
 .info-panel h4 { color: var(--dsu-navy); font-weight: 700; font-size: 1.18rem; }
-.info-panel .info-block { background: #f1f5fb; padding: 10px 14px; border-radius: 10px; margin-top: 10px; font-size: 0.85rem; color: var(--dsu-navy); }
-.info-panel .info-block strong { display: block; color: #64748b; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+.info-panel .info-block { background: #f1f5fb; padding: 10px 14px; border-radius: 10px; margin-top: 10px; font-size: .85rem; color: var(--dsu-navy); }
+.info-panel .info-block strong { display: block; color: #64748b; font-size: .68rem; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
 .info-panel .btn-close-panel { background: none; border: none; color: #94a3b8; font-size: 1.4rem; position: absolute; top: 10px; right: 14px; cursor: pointer; }
-.info-panel .btn-close-panel:hover { color: var(--dsu-navy); }
 .info-img { width: 100%; height: 130px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
 
 .gmaps-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 12px; margin-top: 10px; }
@@ -72,32 +66,28 @@ body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light);
 .dot-end { background: #dc2626; border: 2px solid #fecaca; }
 
 .travel-mode-selector { display: flex; gap: 6px; margin: 10px 0; }
-.mode-btn { flex: 1; border: 1px solid #cbd5e1; background: #fff; color: #475569; border-radius: 20px; padding: 6px 4px; font-size: 0.78rem; font-weight: 600; transition: all 0.2s; cursor: pointer; text-align: center; }
+.mode-btn { flex: 1; border: 1px solid #cbd5e1; background: #fff; color: #475569; border-radius: 20px; padding: 6px 4px; font-size: .78rem; font-weight: 600; cursor: pointer; text-align: center; }
 .mode-btn:hover { background: #f1f5f9; }
-.mode-btn.active { background: var(--dsu-blue); color: #fff; border-color: var(--dsu-blue); box-shadow: 0 2px 6px rgba(30,79,156,0.25); }
-.mode-btn small { display: block; font-size: 0.68rem; font-weight: 400; opacity: 0.95; }
+.mode-btn.active { background: var(--dsu-blue); color: #fff; border-color: var(--dsu-blue); box-shadow: 0 2px 6px rgba(30,79,156,.25); }
+.mode-btn small { display: block; font-size: .68rem; font-weight: 400; }
 
-.route-option-card {
-  background: #fff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 9px 12px;
-  margin-top: 8px; cursor: pointer; transition: all 0.15s;
-}
+.route-option-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 9px 12px; margin-top: 8px; cursor: pointer; }
 .route-option-card:hover { border-color: #93c5fd; }
 .route-option-card.selected { border-color: var(--dsu-blue); background: #eff6ff; }
-.route-badge-shortest { background: #dcfce7; color: #166534; font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-.route-badge-alt { background: #f1f5f9; color: #475569; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 12px; }
+.route-badge-shortest { background: #dcfce7; color: #166534; font-size: .68rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
+.route-badge-alt { background: #f1f5f9; color: #475569; font-size: .68rem; font-weight: 600; padding: 2px 8px; border-radius: 12px; }
 
-.turn-list { max-height: 140px; overflow-y: auto; margin-top: 10px; padding-left: 18px; font-size: 0.79rem; color: #334155; }
+.turn-list { max-height: 140px; overflow-y: auto; margin-top: 10px; padding-left: 18px; font-size: .79rem; color: #334155; }
 .turn-list li { margin-bottom: 4px; }
-
-.pin-label { background: rgba(15, 44, 92, 0.88); color: #fff; border: none; border-radius: 6px; padding: 2px 6px; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-.eta-tooltip { background: #fff; color: #0f2c5c; border: 2px solid #1e4f9c; border-radius: 8px; padding: 3px 8px; font-weight: 700; font-size: 0.74rem; box-shadow: 0 3px 8px rgba(0,0,0,0.25); white-space: nowrap; }
+.pin-label { background: rgba(15,44,92,.88); color: #fff; border: none; border-radius: 6px; padding: 2px 6px; font-size: .7rem; font-weight: 600; }
+.eta-tooltip { background: #fff; color: #0f2c5c; border: 2px solid #1e4f9c; border-radius: 8px; padding: 3px 8px; font-weight: 700; font-size: .74rem; white-space: nowrap; }
 
 .footer-dsu { background: var(--dsu-navy); color: #cbd5e1; padding: 40px 20px 16px; margin-top: 40px; }
 .footer-dsu h5 { color: #fff; }
-.footer-dsu p { font-size: 0.85rem; }
-.footer-copy { text-align: center; border-top: 1px solid var(--dsu-blue); padding-top: 14px; font-size: 0.8rem; }
+.footer-dsu p { font-size: .85rem; }
+.footer-copy { text-align: center; border-top: 1px solid var(--dsu-blue); padding-top: 14px; font-size: .8rem; }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .hero h1 { font-size: 1.7rem; }
   #campusMap { height: 420px; }
   .info-panel { position: static; margin-top: 20px; max-height: none; }
@@ -114,7 +104,7 @@ body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light);
       <span>Campus Compass<small>DSU Harohalli Campus</small></span>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
@@ -148,32 +138,22 @@ body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light);
       <p class="section-sub mb-0">Click any pin or card below to navigate from your GPS or any campus gate.</p>
     </div>
     <div class="d-flex gap-2 align-items-center">
-      <span id="backendStatusBadge" class="badge bg-secondary-subtle text-dark border px-3 py-2">
-        🔌 Backend: Checking...
-      </span>
-      <span id="gpsStatusBadge" class="badge bg-secondary-subtle text-dark border px-3 py-2">
-        📡 GPS Standby
-      </span>
+      <span id="backendStatusBadge" class="badge bg-secondary-subtle text-dark border px-3 py-2">🔌 Backend: Checking...</span>
+      <span id="gpsStatusBadge" class="badge bg-secondary-subtle text-dark border px-3 py-2">📡 GPS Standby</span>
     </div>
   </div>
 
   <div class="map-toolbar">
     <div class="d-flex flex-wrap align-items-center gap-2">
-      <button class="btn btn-sm btn-primary" onclick="startLiveGpsTracking()">
-        📍 Locate My Live GPS
-      </button>
-      <button class="btn btn-sm btn-outline-secondary" onclick="simulatePhoneGpsOnCampus()">
-        📱 Simulate Phone GPS at Gate 1
-      </button>
+      <button class="btn btn-sm btn-primary" onclick="startLiveGpsTracking()">📍 Locate My Live GPS</button>
+      <button class="btn btn-sm btn-outline-secondary" onclick="simulatePhoneGpsOnCampus()">📱 Simulate Phone GPS at Gate 1</button>
     </div>
     <small class="text-muted">Tip: Live GPS works best on a phone over HTTPS / localhost.</small>
   </div>
 
   <div class="row g-4">
     <div class="col-lg-8">
-      <div class="map-wrapper">
-        <div id="campusMap"></div>
-      </div>
+      <div class="map-wrapper"><div id="campusMap"></div></div>
     </div>
 
     <div class="col-lg-4">
@@ -202,35 +182,20 @@ body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light);
             </div>
 
             <div class="travel-mode-selector">
-              <button class="mode-btn active" id="mode-walk" onclick="setTravelMode('walk')">
-                🚶 Walk <small id="time-walk">--</small>
-              </button>
-              <button class="mode-btn" id="mode-bike" onclick="setTravelMode('bike')">
-                🏍️ 2-Wheeler <small id="time-bike">--</small>
-              </button>
-              <button class="mode-btn" id="mode-car" onclick="setTravelMode('car')">
-                🚗 4-Wheeler <small id="time-car">--</small>
-              </button>
+              <button class="mode-btn active" id="mode-walk" onclick="setTravelMode('walk')">🚶 Walk <small id="time-walk">--</small></button>
+              <button class="mode-btn" id="mode-bike" onclick="setTravelMode('bike')">🏍️ 2-Wheeler <small id="time-bike">--</small></button>
+              <button class="mode-btn" id="mode-car" onclick="setTravelMode('car')">🚗 4-Wheeler <small id="time-car">--</small></button>
             </div>
 
             <div id="directionsStatus" class="small fw-semibold text-primary mb-1"></div>
             <div id="routesList"></div>
             <ol id="turnByTurnList" class="turn-list"></ol>
 
-            <button class="btn btn-outline-secondary btn-sm w-100 mt-2" onclick="clearRoute()">
-              Clear Route Lines
-            </button>
+            <button class="btn btn-outline-secondary btn-sm w-100 mt-2" onclick="clearRoute()">Clear Route Lines</button>
           </div>
 
-          <div class="info-block">
-            <strong>Key Facilities</strong>
-            <span id="infoFacilities"></span>
-          </div>
-
-          <div class="info-block">
-            <strong>Campus Location</strong>
-            <span id="infoLocation"></span>
-          </div>
+          <div class="info-block"><strong>Key Facilities</strong><span id="infoFacilities"></span></div>
+          <div class="info-block"><strong>Campus Location</strong><span id="infoLocation"></span></div>
         </div>
       </div>
     </div>
@@ -267,47 +232,41 @@ body { font-family: "Segoe UI", Arial, sans-serif; background: var(--dsu-light);
 
 <script>
 /* ==========================================================
-   FRONTEND CONFIGURATION
+   1. CONFIGURATION AND CAMPUS LOCATION DATA
    ========================================================== */
 
-// Use the port on which your Flask app is running.
-// Flask's default port is 5000.
 const API_BASE_URL = "http://localhost:5000/api";
 
-/* ==========================================================
-   ALL 22 CAMPUS LOCATIONS
-   ========================================================== */
-
 const DEFAULT_PLACES = [
-  { id: 1, name: "4-Wheeler Main Entrance (Gate 1)", tag: "Entrance", facilities: "Main Entry Gate, Security Checkpoint, Visitor Pass Desk", location: "North-West Perimeter (Off Kanakapura Rd / NH 948)", desc: "Primary entrance gate for 4-wheelers and university buses turning off Kanakapura Road.", image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=400&q=80", coords: [12.66135, 77.44832] },
-  { id: 2, name: "Parking 1 (4-Wheeler & Bus Bay)", tag: "Entrance", facilities: "4-Wheeler Parking Lot, College Bus Parking Bay", location: "West Frontage (Parallel to Kanakapura Road)", desc: "Main front parking strip directly inside the highway perimeter.", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=400&q=80", coords: [12.66062, 77.44844] },
-  { id: 3, name: "2-Wheeler & Pedestrian Entrance (Gate 2)", tag: "Entrance", facilities: "Two-Wheeler Entry/Exit, Dedicated Pedestrian Walkway", location: "South-West Edge (Along Kanakapura Road)", desc: "Dedicated entry lane for two-wheelers and pedestrians near Performing Arts.", image: "https://images.unsplash.com/photo-1574958269340-fa927503df98?auto=format&fit=crop&w=400&q=80", coords: [12.66131, 77.44837] },
-  { id: 4, name: "Parking 2 & 3 (Central & East Parking)", tag: "Entrance", facilities: "Faculty, Staff & Student 4-Wheeler Parking", location: "Central-East Campus (Along Internal Ring Road)", desc: "Interior parking zones serving the Engineering, Pharmacy, and Arena blocks.", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=400&q=80", coords: [12.66041, 77.44862] },
-  { id: 5, name: "CDSIMER Hospital & Medical College", tag: "Medical", facilities: "Multi-Specialty Hospital, 24/7 Emergency, OPD, Medical Teaching Labs", location: "North-West Academic-Medical Quadrant", desc: "Dr. Chandramma Dayananda Sagar Institute of Medical Education & Research.", image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80", coords: [12.66114, 77.44947] },
-  { id: 6, name: "School of Engineering (SOE)", tag: "Academic", facilities: "CSE, AI & ML, ECE, Aerospace, Central Library, Placement Wing", location: "Central Academic Ring (Surrounding Central Fountain)", desc: "Main engineering academic blocks housing classrooms, research labs, and library.", image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80", coords: [12.66207, 77.45074] },
-  { id: 7, name: "School of Health Sciences (HS Block)", tag: "Academic", facilities: "Nursing, Physiotherapy, Allied Health & Pharmacy Departments", location: "South-West Academic Quadrant", desc: "Academic block for Health Sciences, Physiotherapy, and Nursing programs.", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80", coords: [12.65965, 77.44940] },
-  { id: 8, name: "Mechanical Engineering & Labs Block", tag: "Academic", facilities: "Structures Lab, Avionics Lab, Foundry, CAD/CAM & Workshops", location: "Central-North Engineering Wing", desc: "Dedicated engineering workshops and heavy machinery laboratories.", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80", coords: [12.66218, 77.45197] },
-  { id: 9, name: "Centre for Performing Arts", tag: "Academic", facilities: "Music Studios, Dance Rooms, Cultural Rehearsal Spaces", location: "South-West Corner (Near 2-Wheeler Gate)", desc: "Dedicated wing for fine arts, music, and cultural activities.", image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=400&q=80", coords: [12.65979, 77.45327] },
-  { id: 10, name: "Mini Amphitheatre (Opposite HS Block)", tag: "Venues", facilities: "Stepped Open-Air Seating, Acoustic Stage, Campus Plaza", location: "Directly Opposite Health Sciences (HS) Block", desc: "Open-air stepped amphitheatre located right opposite the HS Block for student events and gatherings.", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80", coords: [12.65826, 77.44677] },
-  { id: 11, name: "Open Auditorium & Main Convention Stage", tag: "Venues", facilities: "Large Stage, Sound & Lighting Rig, Seminar & Convocation Seating", location: "Central Academic Courtyard", desc: "Primary open auditorium used for university fests, orientations, and guest lectures.", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=400&q=80", coords: [12.65965, 77.45301] },
-  { id: 12, name: "S' Residences (Student Hostel Towers)", tag: "Hostels", facilities: "Boys & Girls Towers, 2/3/4-Sharing Rooms, Study Lounges, Wi-Fi, Gym", location: "North-East Residential Zone (Along DSU Hostel Rd)", desc: "Modern multi-storey student residences with biometric security, lounges, and lake views.", image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=400&q=80", coords: [12.65782, 77.44725] },
-  { id: 13, name: "In-Campus Girls & Boys Hostels", tag: "Hostels", facilities: "Furnished Rooms, 24/7 Security, Reading Rooms, Laundry, Medical Access", location: "East Residential Sector (DSU Hostel Rd Entrance)", desc: "On-campus residential blocks offering convenient road & walking access to academic wings.", image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=400&q=80", coords: [12.65792, 77.44802] },
-  { id: 14, name: "S' Square Mess Hall", tag: "Food", facilities: "Breakfast, Lunch & Dinner Dining Halls, Veg & Non-Veg Counters", location: "Residential Dining Hub (Near S' Residences)", desc: "Main residential dining facility serving daily meals to hostel students.", image: "https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=400&q=80", coords: [12.65791, 77.44601] },
-  { id: 15, name: "Central Campus Food Court & Cafeteria", tag: "Food", facilities: "Multi-Cuisine Stalls, South/North Indian Meals, Juices, Coffee & Snacks", location: "Central Academic Plaza (Grains & Gossip / Food Court)", desc: "Main student hangout spot for lunch, coffee breaks, and quick bites between lectures.", image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80", coords: [12.65766, 77.44562] },
-  { id: 16, name: "Bits & Bites / Campus Bakery & Eateries", tag: "Food", facilities: "Bakery, Sandwiches, Tea/Coffee, Ice Cream & Evening Snacks", location: "Near Residential & Sports Junction", desc: "Popular campus snack counters and bakery kiosks open through the evening.", image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80", coords: [12.66051, 77.44939] },
-  { id: 17, name: "CDSIMER Hospital Canteen", tag: "Food", facilities: "Hygienic Meals, Refreshments, Pharmacy & Visitor Seating", location: "Ground Floor / Wing of CDSIMER Hospital", desc: "Canteen serving medical students, hospital staff, and visitors.", image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80", coords: [12.66003, 77.45001] },
-  { id: 18, name: "DSU Campus Lake & Lakeside Walkway", tag: "Nature", facilities: "Scenic Lakefront, Benches, Evening Walking Path, Landscaped Greenery", location: "North-East Campus Border (Behind Hostels)", desc: "Tranquil lakeside spot with seating benches, popular for evening walks and sunset views.", image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80", coords: [12.65758, 77.44870] },
-  { id: 19, name: "DSU Cricket Ground", tag: "Sports", facilities: "Full-Size Cricket Pitch, Practice Nets, Spectator Gallery", location: "South-East Sports Complex", desc: "Expansive campus cricket ground hosting inter-college tournaments and practice sessions.", image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=400&q=80", coords: [12.66163, 77.45475] },
-  { id: 20, name: "Football Ground & Athletics Track", tag: "Sports", facilities: "Football Turf, 400m Running Track, Outdoor Open Gym", location: "South-Central Sports Complex", desc: "Full-sized football field encircled by an athletics running track.", image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=400&q=80", coords: [12.66153, 77.45594] },
-  { id: 21, name: "Outdoor Courts (Basketball, Tennis, Volleyball)", tag: "Sports", facilities: "Basketball Courts, Tennis Courts, Volleyball & Pickleball Courts", location: "Central-South Sports Zone", desc: "Multi-sport hard courts for basketball, tennis, volleyball, and pickleball.", image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=400&q=80", coords: [12.66075, 77.45470] },
-  { id: 22, name: "THE ARENA (Indoor Sports & Events Complex)", tag: "Sports", facilities: "Indoor Badminton, Table Tennis, Gym, Indoor Games & Mega Events", location: "East Perimeter (South of Parking 3)", desc: "The large sports complex on the eastern side of campus for indoor athletics and major events.", image: "https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=400&q=80", coords: [12.65981, 77.45300] }
+  { id: 1, name: "4-Wheeler Main Entrance (Gate 1)", tag: "Entrance", facilities: "Main Entry Gate, Security Checkpoint, Visitor Pass Desk", location: "North-West Perimeter (Off Kanakapura Rd / NH 948)", desc: "Primary entrance gate for 4-wheelers and university buses turning off Kanakapura Road.", image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=400&q=80", coords: [12.66135,77.44832] },
+  { id: 2, name: "Parking 1 (4-Wheeler & Bus Bay)", tag: "Entrance", facilities: "4-Wheeler Parking Lot, College Bus Parking Bay", location: "West Frontage (Parallel to Kanakapura Road)", desc: "Main front parking strip directly inside the highway perimeter.", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=400&q=80", coords: [12.66062,77.44844] },
+  { id: 3, name: "2-Wheeler & Pedestrian Entrance (Gate 2)", tag: "Entrance", facilities: "Two-Wheeler Entry/Exit, Dedicated Pedestrian Walkway", location: "South-West Edge (Along Kanakapura Road)", desc: "Dedicated entry lane for two-wheelers and pedestrians near Performing Arts.", image: "https://images.unsplash.com/photo-1574958269340-fa927503df98?auto=format&fit=crop&w=400&q=80", coords: [12.66131,77.44837] },
+  { id: 4, name: "Parking 2 & 3 (Central & East Parking)", tag: "Entrance", facilities: "Faculty, Staff & Student 4-Wheeler Parking", location: "Central-East Campus (Along Internal Ring Road)", desc: "Interior parking zones serving the Engineering, Pharmacy, and Arena blocks.", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=400&q=80", coords: [12.66041,77.44862] },
+  { id: 5, name: "CDSIMER Hospital & Medical College", tag: "Medical", facilities: "Multi-Specialty Hospital, 24/7 Emergency, OPD, Medical Teaching Labs", location: "North-West Academic-Medical Quadrant", desc: "Dr. Chandramma Dayananda Sagar Institute of Medical Education & Research.", image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80", coords: [12.66114,77.44947] },
+  { id: 6, name: "School of Engineering (SOE)", tag: "Academic", facilities: "CSE, AI & ML, ECE, Aerospace, Central Library, Placement Wing", location: "Central Academic Ring (Surrounding Central Fountain)", desc: "Main engineering academic blocks housing classrooms, research labs, and library.", image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80", coords: [12.66207,77.45074] },
+  { id: 7, name: "School of Health Sciences (HS Block)", tag: "Academic", facilities: "Nursing, Physiotherapy, Allied Health & Pharmacy Departments", location: "South-West Academic Quadrant", desc: "Academic block for Health Sciences, Physiotherapy, and Nursing programs.", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=80", coords: [12.65965,77.44940] },
+  { id: 8, name: "Mechanical Engineering & Labs Block", tag: "Academic", facilities: "Structures Lab, Avionics Lab, Foundry, CAD/CAM & Workshops", location: "Central-North Engineering Wing", desc: "Dedicated engineering workshops and heavy machinery laboratories.", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80", coords: [12.66218,77.45197] },
+  { id: 9, name: "Centre for Performing Arts", tag: "Academic", facilities: "Music Studios, Dance Rooms, Cultural Rehearsal Spaces", location: "South-West Corner (Near 2-Wheeler Gate)", desc: "Dedicated wing for fine arts, music, and cultural activities.", image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=400&q=80", coords: [12.65979,77.45327] },
+  { id: 10, name: "Mini Amphitheatre (Opposite HS Block)", tag: "Venues", facilities: "Stepped Open-Air Seating, Acoustic Stage, Campus Plaza", location: "Directly Opposite Health Sciences (HS) Block", desc: "Open-air stepped amphitheatre located right opposite the HS Block for student events and gatherings.", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80", coords: [12.65826,77.44677] },
+  { id: 11, name: "Open Auditorium & Main Convention Stage", tag: "Venues", facilities: "Large Stage, Sound & Lighting Rig, Seminar & Convocation Seating", location: "Central Academic Courtyard", desc: "Primary open auditorium used for university fests, orientations, and guest lectures.", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=400&q=80", coords: [12.65965,77.45301] },
+  { id: 12, name: "S' Residences (Student Hostel Towers)", tag: "Hostels", facilities: "Boys & Girls Towers, 2/3/4-Sharing Rooms, Study Lounges, Wi-Fi, Gym", location: "North-East Residential Zone (Along DSU Hostel Rd)", desc: "Modern multi-storey student residences with biometric security, lounges, and lake views.", image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=400&q=80", coords: [12.65782,77.44725] },
+  { id: 13, name: "In-Campus Girls & Boys Hostels", tag: "Hostels", facilities: "Furnished Rooms, 24/7 Security, Reading Rooms, Laundry, Medical Access", location: "East Residential Sector (DSU Hostel Rd Entrance)", desc: "On-campus residential blocks offering convenient road & walking access to academic wings.", image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=400&q=80", coords: [12.65792,77.44802] },
+  { id: 14, name: "S' Square Mess Hall", tag: "Food", facilities: "Breakfast, Lunch & Dinner Dining Halls, Veg & Non-Veg Counters", location: "Residential Dining Hub (Near S' Residences)", desc: "Main residential dining facility serving daily meals to hostel students.", image: "https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=400&q=80", coords: [12.65791,77.44601] },
+  { id: 15, name: "Central Campus Food Court & Cafeteria", tag: "Food", facilities: "Multi-Cuisine Stalls, South/North Indian Meals, Juices, Coffee & Snacks", location: "Central Academic Plaza (Grains & Gossip / Food Court)", desc: "Main student hangout spot for lunch, coffee breaks, and quick bites between lectures.", image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80", coords: [12.65766,77.44562] },
+  { id: 16, name: "Bits & Bites / Campus Bakery & Eateries", tag: "Food", facilities: "Bakery, Sandwiches, Tea/Coffee, Ice Cream & Evening Snacks", location: "Near Residential & Sports Junction", desc: "Popular campus snack counters and bakery kiosks open through the evening.", image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80", coords: [12.66051,77.44939] },
+  { id: 17, name: "CDSIMER Hospital Canteen", tag: "Food", facilities: "Hygienic Meals, Refreshments, Pharmacy & Visitor Seating", location: "Ground Floor / Wing of CDSIMER Hospital", desc: "Canteen serving medical students, hospital staff, and visitors.", image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80", coords: [12.66003,77.45001] },
+  { id: 18, name: "DSU Campus Lake & Lakeside Walkway", tag: "Nature", facilities: "Scenic Lakefront, Benches, Evening Walking Path, Landscaped Greenery", location: "North-East Campus Border (Behind Hostels)", desc: "Tranquil lakeside spot with seating benches, popular for evening walks and sunset views.", image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80", coords: [12.65758,77.44870] },
+  { id: 19, name: "DSU Cricket Ground", tag: "Sports", facilities: "Full-Size Cricket Pitch, Practice Nets, Spectator Gallery", location: "South-East Sports Complex", desc: "Expansive campus cricket ground hosting inter-college tournaments and practice sessions.", image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=400&q=80", coords: [12.66163,77.45475] },
+  { id: 20, name: "Football Ground & Athletics Track", tag: "Sports", facilities: "Football Turf, 400m Running Track, Outdoor Open Gym", location: "South-Central Sports Complex", desc: "Full-sized football field encircled by an athletics running track.", image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=400&q=80", coords: [12.66153,77.45594] },
+  { id: 21, name: "Outdoor Courts (Basketball, Tennis, Volleyball)", tag: "Sports", facilities: "Basketball Courts, Tennis Courts, Volleyball & Pickleball Courts", location: "Central-South Sports Zone", desc: "Multi-sport hard courts for basketball, tennis, volleyball, and pickleball.", image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=400&q=80", coords: [12.66075,77.45470] },
+  { id: 22, name: "THE ARENA (Indoor Sports & Events Complex)", tag: "Sports", facilities: "Indoor Badminton, Table Tennis, Gym, Indoor Games & Mega Events", location: "East Perimeter (South of Parking 3)", desc: "The large sports complex on the eastern side of campus for indoor athletics and major events.", image: "https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=400&q=80", coords: [12.65981,77.45300] }
 ];
 
 /* ==========================================================
-   STATE AND MAP INITIALIZATION
+   2. APPLICATION STATE AND MAP
    ========================================================== */
 
-let places = [];
+let places = DEFAULT_PLACES;
 let currentFilter = "All";
 let selectedPlace = null;
 let currentTravelMode = "walk";
@@ -318,7 +277,10 @@ let gpsAccuracyCircle = null;
 
 let activePolylines = [];
 let startMarker = null;
+let destinationMarker = null;
 let etaTooltipMarker = null;
+let roadLayer = null;
+
 let computedRoutes = [];
 let selectedRouteIndex = 0;
 let navigationRequestId = 0;
@@ -326,22 +288,19 @@ let navigationRequestId = 0;
 const markers = {};
 
 const tagColors = {
-  "Academic": "#1e4f9c",
-  "Medical": "#dc2626",
-  "Hostels": "#7c3aed",
-  "Food": "#ea580c",
-  "Venues": "#d97706",
-  "Sports": "#059669",
-  "Nature": "#0284c7",
-  "Entrance": "#475569"
+  Academic: "#1e4f9c",
+  Medical: "#dc2626",
+  Hostels: "#7c3aed",
+  Food: "#ea580c",
+  Venues: "#d97706",
+  Sports: "#059669",
+  Nature: "#0284c7",
+  Entrance: "#475569"
 };
 
 const googleHybrid = L.tileLayer(
   "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
-  {
-    maxZoom: 20,
-    attribution: "© Google Maps"
-  }
+  { maxZoom: 20, attribution: "© Google Maps" }
 );
 
 const map = L.map("campusMap", {
@@ -357,37 +316,45 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => map.invalidateSize());
 
 /* ==========================================================
-   1. LOAD PLACES AND CHECK BACKEND
+   3. INITIALIZE APPLICATION AND CHECK BACKEND
    ========================================================== */
 
 async function initApp() {
   const backendBadge = document.getElementById("backendStatusBadge");
 
-  // Keep the supplied campus locations and coordinates for now.
-  // The database coordinates are currently NULL.
+  // Keep the supplied coordinates because the current database
+  // location records have NULL latitude and longitude values.
   places = DEFAULT_PLACES;
+
+  populateStartDropdown();
+  renderMarkers();
+  renderPlaces();
 
   try {
     const healthResponse = await fetch(`${API_BASE_URL}/health`);
 
     if (!healthResponse.ok) {
-      throw new Error("Backend health check failed");
+      throw new Error(`Health API returned ${healthResponse.status}`);
     }
 
+    // Check that the existing locations endpoint is reachable.
     const locationsResponse = await fetch(`${API_BASE_URL}/locations`);
 
     if (!locationsResponse.ok) {
-      throw new Error("Locations API failed");
+      throw new Error(`Locations API returned ${locationsResponse.status}`);
     }
 
     const locationData = await locationsResponse.json();
-
-    console.log("Backend location data:", locationData);
+    console.log("Backend locations response:", locationData);
 
     backendBadge.className =
       "badge bg-success-subtle text-success border border-success-subtle px-3 py-2";
 
     backendBadge.textContent = "🟢 Backend API Connected";
+
+    // The static frontend coordinates remain in use until the
+    // database location records have valid latitude/longitude.
+    await loadRoadNetwork();
 
   } catch (error) {
     console.error("Backend connection error:", error);
@@ -397,59 +364,90 @@ async function initApp() {
 
     backendBadge.textContent = "🟡 Frontend Preview Mode";
   }
-
-  populateStartDropdown();
-  renderMarkers();
-  renderPlaces();
 }
+
+async function loadRoadNetwork() {
+  try {
+    const response = await fetch(`${API_BASE_URL}/route`);
+
+    if (!response.ok) {
+      throw new Error(`Road GeoJSON API returned ${response.status}`);
+    }
+
+    const geoJson = await response.json();
+
+    if (roadLayer) {
+      map.removeLayer(roadLayer);
+    }
+
+    roadLayer = L.geoJSON(geoJson, {
+      style: {
+        color: "#facc15",
+        weight: 4,
+        opacity: 0.9,
+        lineCap: "round",
+        lineJoin: "round"
+      }
+    }).addTo(map);
+
+    roadLayer.bringToBack();
+
+    console.log("Campus road network loaded.");
+
+  } catch (error) {
+    console.error("Could not load road network:", error);
+  }
+}
+
+/* ==========================================================
+   4. CAMPUS MARKERS AND STARTING LOCATION DROPDOWN
+   ========================================================== */
 
 function makeIcon(tag) {
   const color = tagColors[tag] || "#1e4f9c";
 
   return L.divIcon({
     className: "custom-marker",
-    html: `<div style="background:${color}; border:2.5px solid #fff; border-radius:50%; width:18px; height:18px; box-shadow:0 2px 6px rgba(0,0,0,0.45);"></div>`,
+    html: `<div style="background:${color};border:2.5px solid #fff;border-radius:50%;width:18px;height:18px;box-shadow:0 2px 6px rgba(0,0,0,.45);"></div>`,
     iconSize: [18, 18],
     iconAnchor: [9, 9]
   });
 }
 
 function renderMarkers() {
-  Object.values(markers).forEach(marker => {
-    map.removeLayer(marker);
-  });
-
+  Object.values(markers).forEach(marker => map.removeLayer(marker));
   Object.keys(markers).forEach(key => delete markers[key]);
 
   places.forEach(place => {
     const marker = L.marker(place.coords, {
       icon: makeIcon(place.tag)
     })
-      .addTo(map)
-      .bindTooltip(place.name, {
-        direction: "top",
-        offset: [0, -10],
-        className: "pin-label"
-      });
+    .addTo(map)
+    .bindTooltip(place.name, {
+      direction: "top",
+      offset: [0, -10],
+      className: "pin-label"
+    });
 
     marker.on("click", () => showInfo(place));
-
-    markers[place.name] = marker;
+    markers[place.id] = marker;
   });
 }
 
 function populateStartDropdown() {
   const select = document.getElementById("startSelect");
 
-  select.innerHTML =
-    `<option value="gps">📍 My Live GPS Location</option>`;
+  select.innerHTML = "";
+
+  const gpsOption = document.createElement("option");
+  gpsOption.value = "gps";
+  gpsOption.textContent = "📍 My Live GPS Location";
+  select.appendChild(gpsOption);
 
   places.forEach(place => {
     const option = document.createElement("option");
-
-    option.value = place.id;
+    option.value = String(place.id);
     option.textContent = `From: ${place.name}`;
-
     select.appendChild(option);
   });
 
@@ -457,7 +455,7 @@ function populateStartDropdown() {
 }
 
 /* ==========================================================
-   2. LIVE GPS TRACKING
+   5. GPS TRACKING AND SIMULATED GPS
    ========================================================== */
 
 function startLiveGpsTracking() {
@@ -486,20 +484,13 @@ function startLiveGpsTracking() {
 
       const accuracy = Math.round(position.coords.accuracy);
 
-      if (accuracy > 80) {
-        badge.className =
-          "badge bg-warning-subtle text-dark border px-3 py-2";
+      badge.className = accuracy > 80
+        ? "badge bg-warning-subtle text-dark border px-3 py-2"
+        : "badge bg-success-subtle text-success border px-3 py-2";
 
-        badge.textContent =
-          `⚠️ Coarse GPS (±${accuracy}m — Use Phone GPS)`;
-
-      } else {
-        badge.className =
-          "badge bg-success-subtle text-success border px-3 py-2";
-
-        badge.textContent =
-          `📍 Live GPS Active (±${accuracy}m)`;
-      }
+      badge.textContent = accuracy > 80
+        ? `⚠️ Coarse GPS (±${accuracy}m)`
+        : `📍 Live GPS Active (±${accuracy}m)`;
 
       updateUserGpsPin(coords, accuracy);
 
@@ -509,20 +500,22 @@ function startLiveGpsTracking() {
         fetchNavigationRoute();
       }
     },
-
     error => {
       badge.className =
         "badge bg-danger-subtle text-danger border px-3 py-2";
 
-      badge.textContent =
-        error.code === 1
-          ? "⚠️ GPS Permission Denied"
-          : "⚠️ GPS Blocked (Run via localhost/HTTPS or Simulate)";
-    },
+      const messages = {
+        1: "GPS Permission Denied",
+        2: "GPS Position Unavailable",
+        3: "GPS Request Timed Out"
+      };
 
+      badge.textContent =
+        `⚠️ ${messages[error.code] || "GPS Error"}`;
+    },
     {
       enableHighAccuracy: true,
-      timeout: 10000,
+      timeout: 15000,
       maximumAge: 0
     }
   );
@@ -536,8 +529,7 @@ function simulatePhoneGpsOnCampus() {
   badge.className =
     "badge bg-info-subtle text-dark border px-3 py-2";
 
-  badge.textContent =
-    "📱 Simulated Phone GPS (±3m at Gate 1)";
+  badge.textContent = "📱 Simulated GPS at Gate 1";
 
   updateUserGpsPin(gate1, 3);
 
@@ -553,13 +545,8 @@ function simulatePhoneGpsOnCampus() {
 function updateUserGpsPin(coords, accuracyMeters) {
   liveGpsCoords = coords;
 
-  if (gpsMarker) {
-    map.removeLayer(gpsMarker);
-  }
-
-  if (gpsAccuracyCircle) {
-    map.removeLayer(gpsAccuracyCircle);
-  }
+  if (gpsMarker) map.removeLayer(gpsMarker);
+  if (gpsAccuracyCircle) map.removeLayer(gpsAccuracyCircle);
 
   gpsAccuracyCircle = L.circle(coords, {
     radius: accuracyMeters,
@@ -576,12 +563,12 @@ function updateUserGpsPin(coords, accuracyMeters) {
     weight: 3,
     fillOpacity: 1
   })
-    .addTo(map)
-    .bindPopup(`Your GPS Location (±${accuracyMeters}m)`);
+  .addTo(map)
+  .bindPopup(`Your GPS Location (±${accuracyMeters}m)`);
 }
 
 /* ==========================================================
-   3. SHOW LOCATION INFORMATION
+   6. LOCATION INFORMATION PANEL
    ========================================================== */
 
 function showInfo(place) {
@@ -599,8 +586,14 @@ function showInfo(place) {
 
   const startSelect = document.getElementById("startSelect");
 
+  // Avoid selecting the same place as both origin and destination.
   if (String(startSelect.value) === String(place.id)) {
-    startSelect.value = place.id === 1 ? "6" : "1";
+    if (liveGpsCoords) {
+      startSelect.value = "gps";
+    } else {
+      const alternative = places.find(item => item.id !== place.id);
+      startSelect.value = alternative ? String(alternative.id) : "gps";
+    }
   }
 
   fetchNavigationRoute();
@@ -617,11 +610,12 @@ function clearInfo() {
   document.getElementById("infoContent").style.display = "none";
 
   selectedPlace = null;
-
   clearRoute();
 }
 
 function setTravelMode(mode) {
+  if (!["walk", "bike", "car"].includes(mode)) return;
+
   currentTravelMode = mode;
 
   document.querySelectorAll(".mode-btn").forEach(button => {
@@ -634,40 +628,35 @@ function setTravelMode(mode) {
 }
 
 /* ==========================================================
-   4. ROAD NAVIGATION API
+   7. NAVIGATION API
    ========================================================== */
 
-// IMPORTANT:
-// This function calls /api/navigate.
-// The Flask backend must implement this endpoint.
-// It deliberately does NOT draw a straight line if the API fails.
+// Backend request format:
+// /api/navigate?from=latitude,longitude&to=latitude,longitude&mode=walk
+//
+// This matches the navigation.py endpoint discussed earlier.
+// The frontend supports either a single route response or
+// a routes array response.
 
 async function fetchNavigationRoute() {
   if (!selectedPlace) return;
 
   const requestId = ++navigationRequestId;
 
-  const startValue =
-    document.getElementById("startSelect").value;
-
-  const statusElement =
-    document.getElementById("directionsStatus");
+  const startValue = document.getElementById("startSelect").value;
+  const statusElement = document.getElementById("directionsStatus");
 
   let startCoords = null;
 
-  // Get starting coordinates.
   if (startValue === "gps") {
     if (!liveGpsCoords) {
       clearRoutePolylines();
-
       computedRoutes = [];
-
       renderRouteOptionCards();
+      resetTimeBadges();
 
       statusElement.textContent =
-        "Select a campus starting location or enable GPS.";
-
-      resetTimeBadges();
+        "Enable GPS or select a campus starting location.";
 
       return;
     }
@@ -680,9 +669,7 @@ async function fetchNavigationRoute() {
     );
 
     if (!startPlace) {
-      statusElement.textContent =
-        "Starting location not found.";
-
+      statusElement.textContent = "Starting location not found.";
       return;
     }
 
@@ -693,42 +680,47 @@ async function fetchNavigationRoute() {
 
   if (
     !Array.isArray(startCoords) ||
-    !Array.isArray(destinationCoords)
+    !Array.isArray(destinationCoords) ||
+    startCoords.length !== 2 ||
+    destinationCoords.length !== 2
   ) {
-    statusElement.textContent =
-      "Invalid starting or destination coordinates.";
+    statusElement.textContent = "Starting or destination coordinates are invalid.";
+    return;
+  }
 
+  const allCoordinates = [...startCoords, ...destinationCoords];
+
+  if (!allCoordinates.every(value => Number.isFinite(Number(value)))) {
+    statusElement.textContent = "Coordinates contain invalid values.";
     return;
   }
 
   if (
-    startCoords.length !== 2 ||
-    destinationCoords.length !== 2
+    startCoords[0] === destinationCoords[0] &&
+    startCoords[1] === destinationCoords[1]
   ) {
-    statusElement.textContent =
-      "Invalid coordinates.";
-
+    statusElement.textContent = "Origin and destination are the same.";
+    clearRoutePolylines();
+    computedRoutes = [];
+    renderRouteOptionCards();
+    resetTimeBadges();
     return;
   }
 
-  // Remove previous routes before requesting a new route.
   clearRoutePolylines();
-
   computedRoutes = [];
-
   renderRouteOptionCards();
-
   resetTimeBadges();
 
-  statusElement.textContent =
-    "Calculating road route...";
+  statusElement.textContent = "Calculating campus road route...";
 
   try {
+    const fromValue = `${startCoords[0]},${startCoords[1]}`;
+    const toValue = `${destinationCoords[0]},${destinationCoords[1]}`;
+
     const parameters = new URLSearchParams({
-      from_lat: startCoords[0],
-      from_lng: startCoords[1],
-      to_lat: destinationCoords[0],
-      to_lng: destinationCoords[1],
+      from: fromValue,
+      to: toValue,
       mode: currentTravelMode
     });
 
@@ -736,78 +728,61 @@ async function fetchNavigationRoute() {
       `${API_BASE_URL}/navigate?${parameters.toString()}`
     );
 
-    if (!response.ok) {
-      throw new Error(
-        `Navigation API returned HTTP ${response.status}`
-      );
-    }
-
     const data = await response.json();
 
-    // Ignore an older request if the user selected another destination.
+    // Ignore old requests if the user changes the destination
+    // or travel mode while a request is still running.
     if (requestId !== navigationRequestId) return;
 
-    if (
-      !data ||
-      !Array.isArray(data.routes) ||
-      data.routes.length === 0
-    ) {
+    if (!response.ok) {
       throw new Error(
-        data.message || "No road route found."
+        data.error || data.message || `HTTP ${response.status}`
       );
     }
 
-    // Validate every returned route before drawing it.
-    const validRoutes = data.routes.filter(route => {
-      if (
-        !Array.isArray(route.coords) ||
-        route.coords.length < 2
-      ) {
-        return false;
-      }
+    // Accept these response formats:
+    // 1. { "routes": [ { ... }, { ... } ] }
+    // 2. { "route": { ... } }
+    // 3. { "coords": [...], ... }
+    let returnedRoutes = [];
 
-      return route.coords.every(point =>
-        Array.isArray(point) &&
-        point.length >= 2 &&
-        Number.isFinite(Number(point[0])) &&
-        Number.isFinite(Number(point[1])) &&
-        Math.abs(Number(point[0])) <= 90 &&
-        Math.abs(Number(point[1])) <= 180
-      );
-    });
+    if (Array.isArray(data.routes)) {
+      returnedRoutes = data.routes;
+    } else if (data.route && Array.isArray(data.route.coords)) {
+      returnedRoutes = [data.route];
+    } else if (Array.isArray(data.coords)) {
+      returnedRoutes = [data];
+    }
+
+    const validRoutes = returnedRoutes
+      .filter(isValidRoute)
+      .map(normalizeRoute);
 
     if (validRoutes.length === 0) {
       throw new Error(
-        "Backend returned invalid route coordinates."
+        data.error || data.message || "No valid road route was returned by the backend."
       );
     }
 
     computedRoutes = validRoutes;
-
     selectedRouteIndex = 0;
 
-    updateModeTimeBadges(
-      computedRoutes[0].distanceMeters
-    );
+    updateModeTimeBadges(computedRoutes[0].distanceMeters);
 
     statusElement.textContent =
-      `Found ${computedRoutes.length} road route(s).`;
+      `Successfully calculated ${computedRoutes.length} road route(s).`;
 
     drawRoutePolylines();
-
     renderRouteOptionCards();
 
   } catch (error) {
     if (requestId !== navigationRequestId) return;
 
-    console.error("Navigation error:", error);
+    console.error("Navigation API error:", error);
 
     clearRoutePolylines();
-
     computedRoutes = [];
-
     renderRouteOptionCards();
-
     resetTimeBadges();
 
     statusElement.textContent =
@@ -815,25 +790,71 @@ async function fetchNavigationRoute() {
   }
 }
 
+function isValidRoute(route) {
+  if (!route || !Array.isArray(route.coords) || route.coords.length < 2) {
+    return false;
+  }
+
+  const validCoordinates = route.coords.every(point =>
+    Array.isArray(point) &&
+    point.length >= 2 &&
+    Number.isFinite(Number(point[0])) &&
+    Number.isFinite(Number(point[1])) &&
+    Math.abs(Number(point[0])) <= 90 &&
+    Math.abs(Number(point[1])) <= 180
+  );
+
+  return validCoordinates;
+}
+
+function normalizeRoute(route) {
+  const distance = Number(
+    route.distanceMeters ?? route.distance_meters ?? route.distance ?? 0
+  );
+
+  let duration = Number(
+    route.durationMins ?? route.duration_mins ?? route.duration ?? 0
+  );
+
+  // If the backend provides duration in seconds, convert it to minutes.
+  if (duration > 300) {
+    duration = duration / 60;
+  }
+
+  return {
+    label: route.label || "Campus Road Route",
+    distanceMeters: Math.round(distance),
+    durationMins: Math.max(1, Math.round(duration)),
+    viaSummary: route.viaSummary || route.via_summary || "Campus Road",
+    coords: route.coords.map(point => [
+      Number(point[0]),
+      Number(point[1])
+    ]),
+    steps: Array.isArray(route.steps) ? route.steps : []
+  };
+}
+
 /* ==========================================================
-   5. DISTANCE AND ETA
+   8. ETA CALCULATIONS
    ========================================================== */
 
 function updateModeTimeBadges(distanceMeters) {
-  if (!Number.isFinite(Number(distanceMeters))) {
+  const distance = Number(distanceMeters);
+
+  if (!Number.isFinite(distance) || distance <= 0) {
     resetTimeBadges();
     return;
   }
 
-  // These are rough estimates, not live traffic predictions.
+  // Approximate estimates only. These are not live traffic ETAs.
   document.getElementById("time-walk").textContent =
-    `${Math.max(1, Math.round((distanceMeters / 1.35) / 60))} min`;
+    `${Math.max(1, Math.round(distance / 1.35 / 60))} min`;
 
   document.getElementById("time-bike").textContent =
-    `${Math.max(1, Math.round((distanceMeters / 5.5) / 60))} min`;
+    `${Math.max(1, Math.round(distance / 5.5 / 60))} min`;
 
   document.getElementById("time-car").textContent =
-    `${Math.max(1, Math.round((distanceMeters / 4.5) / 60))} min`;
+    `${Math.max(1, Math.round(distance / 4.5 / 60))} min`;
 }
 
 function resetTimeBadges() {
@@ -841,6 +862,10 @@ function resetTimeBadges() {
   document.getElementById("time-bike").textContent = "--";
   document.getElementById("time-car").textContent = "--";
 }
+
+/* ==========================================================
+   9. DRAW SELECTED AND ALTERNATE ROUTES
+   ========================================================== */
 
 function drawRoutePolylines() {
   clearRoutePolylines();
@@ -851,10 +876,7 @@ function drawRoutePolylines() {
 
   if (!active || !Array.isArray(active.coords)) return;
 
-  const leafletCoords = active.coords.map(point => [
-    Number(point[0]),
-    Number(point[1])
-  ]);
+  const leafletCoords = active.coords;
 
   startMarker = L.circleMarker(leafletCoords[0], {
     radius: 8,
@@ -863,23 +885,31 @@ function drawRoutePolylines() {
     weight: 3,
     fillOpacity: 1
   })
-    .addTo(map)
-    .bindTooltip("Start Point");
+  .addTo(map)
+  .bindTooltip("Start Point");
 
-  // Draw alternate routes.
+  destinationMarker = L.circleMarker(
+    leafletCoords[leafletCoords.length - 1],
+    {
+      radius: 8,
+      fillColor: "#dc2626",
+      color: "#fff",
+      weight: 3,
+      fillOpacity: 1
+    }
+  )
+  .addTo(map)
+  .bindTooltip("Destination");
+
+  // Draw alternate routes first.
   computedRoutes.forEach((route, index) => {
     if (index === selectedRouteIndex) return;
 
-    const alternateCoords = route.coords.map(point => [
-      Number(point[0]),
-      Number(point[1])
-    ]);
-
-    const alternateLine = L.polyline(alternateCoords, {
+    const alternateLine = L.polyline(route.coords, {
       color: "#64748b",
       weight: 5,
-      opacity: 0.85,
-      dashArray: "7, 8",
+      opacity: 0.75,
+      dashArray: "7,8",
       lineJoin: "round"
     }).addTo(map);
 
@@ -892,14 +922,11 @@ function drawRoutePolylines() {
     activePolylines.push(alternateLine);
   });
 
-  // Draw selected route.
-  const color =
-    currentTravelMode === "walk"
-      ? "#10b981"
-      : "#2563eb";
+  const routeColor =
+    currentTravelMode === "walk" ? "#10b981" : "#2563eb";
 
   const mainLine = L.polyline(leafletCoords, {
-    color,
+    color: routeColor,
     weight: 7,
     opacity: 0.95,
     lineJoin: "round"
@@ -907,24 +934,21 @@ function drawRoutePolylines() {
 
   activePolylines.push(mainLine);
 
-  const middleIndex =
-    Math.floor(leafletCoords.length / 2);
-
+  const middleIndex = Math.floor(leafletCoords.length / 2);
   const middlePoint = leafletCoords[middleIndex];
 
-  const emoji =
-    currentTravelMode === "walk"
-      ? "🚶"
-      : currentTravelMode === "bike"
-        ? "🏍️"
-        : "🚗";
+  const emoji = currentTravelMode === "walk"
+    ? "🚶"
+    : currentTravelMode === "bike"
+      ? "🏍️"
+      : "🚗";
 
   etaTooltipMarker = L.marker(middlePoint, {
     icon: L.divIcon({
       className: "",
       html: `<div class="eta-tooltip">${emoji} ${active.durationMins} min (${active.distanceMeters} m)</div>`,
-      iconSize: [140, 28],
-      iconAnchor: [70, 14]
+      iconSize: [160, 28],
+      iconAnchor: [80, 14]
     })
   }).addTo(map);
 
@@ -934,112 +958,93 @@ function drawRoutePolylines() {
 }
 
 /* ==========================================================
-   6. ROUTE OPTIONS AND TURN-BY-TURN DIRECTIONS
+   10. ROUTE OPTIONS AND DIRECTIONS
    ========================================================== */
 
 function renderRouteOptionCards() {
-  const listElement =
-    document.getElementById("routesList");
-
-  const turnsElement =
-    document.getElementById("turnByTurnList");
+  const listElement = document.getElementById("routesList");
+  const turnsElement = document.getElementById("turnByTurnList");
 
   listElement.innerHTML = "";
   turnsElement.innerHTML = "";
 
-  if (!computedRoutes.length) {
-    return;
-  }
+  if (!computedRoutes.length) return;
 
   computedRoutes.forEach((route, index) => {
-    const isSelected =
-      index === selectedRouteIndex;
-
-    const badge = index === 0
-      ? `<span class="route-badge-shortest">${route.label || "Shortest Road"}</span>`
-      : `<span class="route-badge-alt">${route.label || `Alternate ${index + 1}`}</span>`;
+    const isSelected = index === selectedRouteIndex;
 
     const card = document.createElement("div");
-
     card.className =
       `route-option-card ${isSelected ? "selected" : ""}`;
 
     const header = document.createElement("div");
-
     header.className =
       "d-flex justify-content-between align-items-center mb-1";
 
-    const badgeContainer = document.createElement("div");
-    badgeContainer.innerHTML = badge;
+    const badge = document.createElement("span");
+    badge.className = index === 0
+      ? "route-badge-shortest"
+      : "route-badge-alt";
+
+    badge.textContent =
+      index === 0 ? "Shortest Route" : `Alternative ${index + 1}`;
 
     const details = document.createElement("strong");
-
-    details.style.fontSize = "0.88rem";
-
+    details.style.fontSize = ".88rem";
     details.textContent =
       `${route.durationMins} min (${route.distanceMeters} m)`;
 
-    header.appendChild(badgeContainer);
+    header.appendChild(badge);
     header.appendChild(details);
 
     const via = document.createElement("div");
-
     via.className = "text-muted";
-    via.style.fontSize = "0.76rem";
-
-    via.textContent =
-      `via ${route.viaSummary || "Campus Road"}`;
+    via.style.fontSize = ".76rem";
+    via.textContent = `via ${route.viaSummary}`;
 
     card.appendChild(header);
     card.appendChild(via);
 
-    card.onclick = () => {
+    card.addEventListener("click", () => {
       selectedRouteIndex = index;
-
       drawRoutePolylines();
-
       renderRouteOptionCards();
-    };
+    });
 
     listElement.appendChild(card);
   });
 
-  const selectedRoute =
-    computedRoutes[selectedRouteIndex];
+  const selectedRoute = computedRoutes[selectedRouteIndex];
 
   if (!selectedRoute) return;
 
-  (selectedRoute.steps || []).forEach(step => {
+  selectedRoute.steps.forEach(step => {
     const item = document.createElement("li");
-
-    // Use textContent to avoid injecting HTML from API responses.
-    item.textContent = step;
-
+    item.textContent = String(step);
     turnsElement.appendChild(item);
   });
 
   const arrivalItem = document.createElement("li");
-
-  arrivalItem.textContent =
-    `Arrive at ${selectedPlace.name}`;
-
+  arrivalItem.textContent = `Arrive at ${selectedPlace.name}`;
   turnsElement.appendChild(arrivalItem);
 }
 
 /* ==========================================================
-   7. CLEAR ROUTE
+   11. CLEAR ROUTE
    ========================================================== */
 
 function clearRoutePolylines() {
-  activePolylines.forEach(line => {
-    map.removeLayer(line);
-  });
-
+  activePolylines.forEach(line => map.removeLayer(line));
   activePolylines = [];
 
   if (startMarker) {
     map.removeLayer(startMarker);
     startMarker = null;
+  }
+
+  if (destinationMarker) {
+    map.removeLayer(destinationMarker);
+    destinationMarker = null;
   }
 
   if (etaTooltipMarker) {
@@ -1049,38 +1054,31 @@ function clearRoutePolylines() {
 }
 
 function clearRoute() {
+  // Invalidate any pending navigation request.
   navigationRequestId++;
 
   clearRoutePolylines();
 
   computedRoutes = [];
-
   selectedRouteIndex = 0;
 
   document.getElementById("directionsStatus").textContent = "";
-
   document.getElementById("routesList").innerHTML = "";
-
   document.getElementById("turnByTurnList").innerHTML = "";
 
   resetTimeBadges();
 }
 
 /* ==========================================================
-   8. DISTANCE CALCULATION UTILITY
+   12. DISTANCE UTILITY
    ========================================================== */
 
 function getDistanceMeters(coord1, coord2) {
   const earthRadius = 6371000;
+  const toRadians = degrees => degrees * Math.PI / 180;
 
-  const toRadians = degrees =>
-    degrees * Math.PI / 180;
-
-  const dLat =
-    toRadians(coord2[0] - coord1[0]);
-
-  const dLon =
-    toRadians(coord2[1] - coord1[1]);
+  const dLat = toRadians(coord2[0] - coord1[0]);
+  const dLon = toRadians(coord2[1] - coord1[1]);
 
   const a =
     Math.sin(dLat / 2) ** 2 +
@@ -1094,58 +1092,52 @@ function getDistanceMeters(coord1, coord2) {
 }
 
 /* ==========================================================
-   9. RENDER CAMPUS LOCATION CARDS
+   13. RENDER CAMPUS LOCATION CARDS
    ========================================================== */
 
 function renderPlaces() {
   const grid = document.getElementById("placesGrid");
-
   grid.innerHTML = "";
 
-  const filtered =
-    currentFilter === "All"
-      ? places
-      : places.filter(place => place.tag === currentFilter);
+  const filtered = currentFilter === "All"
+    ? places
+    : places.filter(place => place.tag === currentFilter);
 
   if (!filtered.length) {
-    grid.innerHTML = `
-      <div class="col-12">
-        <p class="text-muted">No zones in this category.</p>
-      </div>
-    `;
+    const message = document.createElement("p");
+    message.className = "text-muted";
+    message.textContent = "No zones in this category.";
 
+    const column = document.createElement("div");
+    column.className = "col-12";
+    column.appendChild(message);
+    grid.appendChild(column);
     return;
   }
 
   filtered.forEach(place => {
     const column = document.createElement("div");
-
     column.className = "col-md-6 col-lg-4";
 
     const card = document.createElement("div");
-
     card.className = "zone-card";
 
     const image = document.createElement("img");
-
     image.src = place.image;
     image.className = "card-img-top";
     image.alt = place.name;
+    image.loading = "lazy";
 
     const body = document.createElement("div");
-
     body.className = "card-body";
 
     const title = document.createElement("h5");
-
     title.textContent = place.name;
 
     const description = document.createElement("p");
-
     description.textContent = place.desc;
 
     const tag = document.createElement("span");
-
     tag.className = "zone-tag";
     tag.textContent = place.tag;
 
@@ -1156,32 +1148,25 @@ function renderPlaces() {
     card.appendChild(image);
     card.appendChild(body);
 
-    card.onclick = () => showInfo(place);
+    card.addEventListener("click", () => showInfo(place));
 
     column.appendChild(card);
-
     grid.appendChild(column);
   });
 }
 
 /* ==========================================================
-   10. SEARCH CAMPUS LOCATIONS
+   14. SEARCH CAMPUS LOCATIONS
    ========================================================== */
 
 function searchPlace() {
-  const query =
-    document.getElementById("searchInput")
-      .value
-      .trim()
-      .toLowerCase();
+  const query = document.getElementById("searchInput")
+    .value.trim().toLowerCase();
 
-  const resultElement =
-    document.getElementById("searchResult");
+  const resultElement = document.getElementById("searchResult");
 
   if (!query) {
-    resultElement.textContent =
-      "Please enter a location to search.";
-
+    resultElement.textContent = "Please enter a location to search.";
     return;
   }
 
@@ -1189,7 +1174,8 @@ function searchPlace() {
     place.name.toLowerCase().includes(query) ||
     place.facilities.toLowerCase().includes(query) ||
     place.desc.toLowerCase().includes(query) ||
-    place.tag.toLowerCase().includes(query)
+    place.tag.toLowerCase().includes(query) ||
+    place.location.toLowerCase().includes(query)
   );
 
   if (found) {
@@ -1200,42 +1186,39 @@ function searchPlace() {
 
   } else {
     resultElement.textContent =
-      "❌ No matching zone found. Try 'Amphitheatre', 'Hostel', or 'Lake'.";
+      "❌ No matching zone found. Try Amphitheatre, Hostel, or Lake.";
   }
 }
 
-document
-  .getElementById("searchInput")
-  .addEventListener("keypress", event => {
+document.getElementById("searchInput")
+  .addEventListener("keydown", event => {
     if (event.key === "Enter") {
       searchPlace();
     }
   });
 
 /* ==========================================================
-   11. CATEGORY FILTER
+   15. CATEGORY FILTER
    ========================================================== */
 
-document
-  .getElementById("filterBar")
+document.getElementById("filterBar")
   .addEventListener("click", event => {
-    if (!event.target.classList.contains("filter-btn")) {
-      return;
-    }
+    const button = event.target.closest(".filter-btn");
 
-    document.querySelectorAll(".filter-btn").forEach(button => {
-      button.classList.remove("active");
+    if (!button) return;
+
+    document.querySelectorAll(".filter-btn").forEach(item => {
+      item.classList.remove("active");
     });
 
-    event.target.classList.add("active");
+    button.classList.add("active");
 
-    currentFilter = event.target.dataset.filter;
-
+    currentFilter = button.dataset.filter;
     renderPlaces();
   });
 
 /* ==========================================================
-   START APPLICATION
+   16. START APPLICATION
    ========================================================== */
 
 initApp();
